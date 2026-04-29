@@ -1,0 +1,32 @@
+/* em html é id= em css é # (so pode um elemento dentro do mesmo elemento de HTML)
+em HTML é class= em CSS é . (pode mais de um elemento)*/
+
+body {
+    background-color: #6592FA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:#1511FA;
+}
+
+h1#principal{
+
+    text-align: center;
+    color: aliceblue;
+    /* Tag color fonte cor */
+    background-color:#11A1FA;
+    /* Tag background-color é para grifar*/
+}
+
+h2 {
+    color: #1158FA;
+
+}
+/* Tag no HTML coloca class e aqui no CSS .e o nome que deu */
+.basico {
+    color: rgb(32, 70, 54);
+}
+.destaque {
+    background-color: bisque;
+}

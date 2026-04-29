@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--No href que colocamos a foto no favicon (foto no site da aba)-->
+    <title>Mídias em HTML </title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador </p>
+
+    <picture><!--A ordem das Tags sources devem ser seguidas a risca -->
+        <source media="(max-width: 750px)" srcset="Imagnes/pequeno.png" type="image/png"><!--Tag source:media:type para quando diminuir ou aumentar a tela a imagem acompanhar-->
+        <source media="(max-width: 1000px)" srcset="Imagnes/medio.png" type="image/png"> <!--nessa Tag colocar o px da sua imagem e em "max"--> <!--se o dispositivo for menor que 1000px (que eu coloquei de tamanho de imagem) ele ira carregar a imagem media-->
+        <img src="Imagnes/grande.png" alt="imagem flexivel"> <!--imagens para colocar use Tag img-->
+    <h1>Reproduzir áudio</h1>
+    <p>Vamos aprender a Reproduzir áudios em HTML5.</p>
+    <audio src="midia/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) [kPa7bsKwL-c].mp3" controls autoplay></audio> <!--Tag para colocar audios para baixar -->
+    <!--MP3 WAV OGG-->
+
+    <audio preload="metadata"> <!--Outras maneiras de colocar o audio(mas deu certo o de cima)-->
+          <source src="midia/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) [kPa7bsKwL-c].mp3" type="audio/mpeg"> <!--MP3-->
+          <source src="midia/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) [kPa7bsKwL-c].ogg" type="audio/ogg"><!--ogg-->
+          <source src="midia/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) [kPa7bsKwL-c].mp3" type="audio/wav"><!--wav-->
+          <p>Infelizmente seu navegador não consegue Reproduzir áudio. <a href="midia/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video) [kPa7bsKwL-c].mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

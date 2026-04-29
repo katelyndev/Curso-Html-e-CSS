@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox centralizado</title>
+    <style>
+        /* A tag * é um setor universal que abrange todos os itens */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(161, 59, 148);
+        }
+        /* A tasg abaixo e para o fundo do titulo ser diferente */ 
+        /* Tudo dentro dessa tag mexe com o bloco pai e os filhos */
+        main {
+            background-color: aliceblue;
+            height: 50vh;
+            width: 100vw;
+/* Usando essas configuraçoes abaixo ficara centralizada o conteiner*/
+            display: flex;
+            flex-flow: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            }
+        section{
+            background-color: rgb(231, 48, 176);
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
+    
+</body>
+</html>

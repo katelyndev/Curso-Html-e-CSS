@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+           background-color: rgb(26, 114, 185); 
+           display: flex;
+           flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: #CAE8AF;
+            border: 1px solid black;
+            /* Tag text-aling deixa no centro o texto */
+            text-align: center;
+            /* Tag flex-basis tamanho dos itens*/
+            flex-basis: 150px;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="item"id="i1">A</div>
+    <div class="item" id="i2">Outro conteudo </div>
+    <div class="item" id="i3">C</div>
+    <!-- Tag  <div class="item" style="order: -3;">D</div> elqa faz com que o item mude de ordem -->
+    <div class="item"id="i4">Conteudo um pouco maior</div>
+    <div class="item"id="i5">E</div>
+    <div class="item"id="i6">Conteudo maior ainda, que vai ocupar mais espaço.</div>
+    <div class="item"id="i7">G</div>
+    </div>
+</body>
+</html>

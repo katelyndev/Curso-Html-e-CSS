@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* tudo fundo */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    background-color: #FA7D5F;
+    height: 100vh;
+    width: 100vw;
+}
+/* parte do h1 e nav */
+header{
+    background-color: #F9985E;
+    color: rgb(121, 53, 14);
+    padding: 10px;
+/* fazer um flxbox */
+    display: flex;
+    flex-flow: row wrap;
+    /* Tag a baixo gruda na parte da direita  */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > h1{
+    /* border: 1px dotted black; */
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.055);
+}
+
+header > nav {
+    /* border: 1px dotted black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+header > nav > a {
+    border-radius: 7px;
+    background-color:#FAC85F;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+/* Tag a baixo para quando o mouse passar em cima de um botao */
+header > nav > a:hover {
+    background-color: #FA625F;
+    color: black;
+    transition: backgound-color, 3s;
+
+}
+/* ~Texto em lorem  */
+main{
+    background-color: #FACDB2;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    /* Tag abaixoé utilizada para adicionar efeitos de sombra ao redor de elementos HTML */
+    box-shadow: 2px 2px 3px #0303036b;
+}

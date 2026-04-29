@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+           background-color: #1a72b9; 
+           display: flex;
+           flex-flow: row wrap;
+           /*Tag acima nowrap nao quebra linha   */
+           
+        }
+
+        div.item{
+            background-color: #CAE8AF;
+            border: 1px solid black;
+            /* Tag text-aling deixa no centro o texto */
+            text-align: center;
+            /* Tag abaixo que estabelece um tamanho de filhos */
+            
+  
+        } 
+        div#caxA{
+            /* Tag abaixo foi simplicada em apenas flex(na oredem que esta)
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px; */
+            
+            flex: 1 0 200px;
+  
+        }
+        div#caxB{
+            /* Tag abaixo foi simplifica em flex apenas 
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px;
+        }
+        div#caxC{
+            /* Tag abaixo foi simplificada
+            flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto; */
+        /* auto e tamnho automatico do conteudo */
+
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="item" id="caxA">A</div>
+    <div class="item" id="caxB">B</div>
+    <div class="item" id="caxC">C</div> 
+    
+</body>
+</html>

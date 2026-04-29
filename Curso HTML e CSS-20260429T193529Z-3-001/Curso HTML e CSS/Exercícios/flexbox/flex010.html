@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+           background-color: #1a72b9; 
+           display: flex;
+           flex-flow: row wrap;
+           /*Tag acima nowrap nao quebra linha   */
+           
+        }
+
+        div.item{
+            background-color: #CAE8AF;
+            border: 1px solid black;
+            /* Tag text-aling deixa no centro o texto */
+            text-align: center;
+            /* Tag abaixo que estabelece um tamanho de filhos */
+            flex-basis: 250px;
+            /* Tag abixo nao encole os filhos se usar 1 agora usnado 0 ele some \*/
+            flex-shrink: 1;
+            /* Tag abaixo em 0 se aumntar a tela ele mantem o tamnha mas se colocar 1 ele aumenta */
+            flex-grow: 1;
+            /* Padrão da Tag shirink e grow é 1 e 0 */
+            
+        } 
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</body>
+</html>

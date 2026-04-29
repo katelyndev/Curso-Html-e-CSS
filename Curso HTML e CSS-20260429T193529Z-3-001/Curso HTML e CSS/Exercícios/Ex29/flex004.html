@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+           background-color: #1a72b9; 
+
+           display: flex;
+           height: 300px;
+           flex-flow: row nowrap;
+           /* Caderno  justify-content*/
+           justify-content: space-around;
+           /* Tag abaixo que muda o tamnho do conteiner  */
+           align-items: flex-start;
+        }
+
+        div.item{
+            background-color: #CAE8AF;
+            border: 1px solid black;
+            /* Tag text-aling deixa no centro o texto */
+            text-align: center;
+            
+        } 
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="item">Exemplo de Bloco A</div>
+    <div class="item">Exemplo de Bloco B</div>
+    <div class="item">Exemplo de Bloco C</div>
+    <div class="item">Exemplo de Bloco D</div>
+    <div class="item">Exemplo de Bloco F</div>
+    <div class="item">Exemplo de Bloco G</div>
+    </div>
+</body>
+</html>

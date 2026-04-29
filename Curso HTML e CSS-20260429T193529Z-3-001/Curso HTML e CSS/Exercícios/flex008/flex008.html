@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+           background-color: rgb(26, 114, 185); 
+           display: flex;
+           flex-flow: row wrap;
+           align-items: flex-start;
+           height: 400px;
+        }
+
+        div.item{
+            background-color: #CAE8AF;
+            border: 1px solid black;
+            /* Tag text-aling deixa no centro o texto */
+            text-align: center;
+            padding: 20px;
+    /* Divis a seguir destacam um item para mudar */
+        }
+        div#i1{ 
+            /* Tag a baixo herda do "pai"*/
+            align-self: auto;
+        }
+        div#i2{
+            /* Tag a baixo fica smepre perto do main-axis */
+            align-self: flex-start;
+        }
+        div#i3{
+            /* Tag a baixo so um item se moveu */
+            align-self: flex-end;
+        }
+        div#i4{
+            
+        }
+        div#i5{
+            align-self: center;
+        }
+        div#i6{
+            /* Tag a baixo de cumprido */
+            align-self: stretch;
+        }
+        div#i7{ 
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="item"id="i1">A</div>
+    <div class="item" id="i2">B</div>
+    <div class="item" id="i3">C</div>
+    <!-- Tag  <div class="item" style="order: -3;">D</div> elqa faz com que o item mude de ordem -->
+    <div class="item"id="i4">D</div>
+    <div class="item"id="i5">E</div>
+    <div class="item"id="i6">F</div>
+    <div class="item"id="i7">G</div>
+    </div>
+</body>
+</html>

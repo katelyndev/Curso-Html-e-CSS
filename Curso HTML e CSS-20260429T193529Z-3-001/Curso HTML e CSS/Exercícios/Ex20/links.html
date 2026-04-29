@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+        a {
+             /* Tag a para a cor dos links */
+            color: rgb(97, 25, 126);
+            /* A tag  text-decoration: none; ela tira o subrinhado*/
+            text-decoration: none;
+            /* A Tag  font-weight: bold; deixa em negrito */
+            font-weight: bold;
+            
+        }
+        /* Tag para quando um link for visitado ser de outra cor */
+        a:visited {
+            color: rgb(77, 77, 148);
+        }
+        /* Para passar o mouse ele faz algo */
+        a:hover {
+            /*A Tag color: ; quando passar o mouse em cima ele vai ficar de outra cor */
+            color: rgb(97, 25, 126);
+            /* A Tag text-decoration: underline; quando passar o mouse em cima ele vai ficar subrinhado */
+            text-decoration: underline;
+        }
+
+         /* Isso serve para quando clicar mudar de cor  */
+       a:active {
+        color: yellow;
+       }
+
+       a::before {
+        content: ↪;
+       }
+
+       a::after {
+        /* Avisando que é um link */
+        content: ' [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: brown;
+       }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul> 
+        <!-- A Tag target="_blank para abrir em nova aba-->
+        <li><a href="https://github.com/katelyndev" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=kPa7bsKwL-c&list=RDkPa7bsKwL-c&start_radio=1">Canal do YouTube</a></li>
+        <li><a href="https://www.marvel.com/">Sites</a></li>
+    </ul>
+</body>
+</html>
