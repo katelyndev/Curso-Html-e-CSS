@@ -8,3 +8,5 @@ HTML5: Estruturação semântica de páginas.
 CSS3: Estilização, animações e layout.
 
 Design Responsivo: Técnicas de Mobile-First.
+
+Feito por Katelyn Ribeiro. 👋
